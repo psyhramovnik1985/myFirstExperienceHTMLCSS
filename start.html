@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выпускной проект HTML, CSS</title>	
+	<meta http-equiv="cleartype" content="on"/>	<!--включения сглаживания шрифтов-->
+	<meta name="HandheldFriendly" content="True"/><!--откл авто изменения масштаба смортфонами-->
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="address=no"/>
+	<meta name="x-rim-auto-match" content="none" forua="true"><!-- три меты чтоб браузеры мобильные не пытались обнаружить телефоны и адреса-->
+	<!-- saved from url=(0014)about:internet -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!--чтоб IE включал режим совместимости с последней его версией-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="files/start.css" type="text/css">
+	<link rel="icon" href="images/icon-jetro.gif" type="image/gif">	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<bgsound src="sounds/Sound_start.mp3" loop="-1" volume="-2500" balance="0" />
+</head>
+<body>
+<div id="page-preloader"><span class="spinner2"></span><span class="spinner"></span><span class="spinner3"></span></div>		
+<div>	
+	<img src="images/cosm.jpg" alt="космос пропал">
+	<div id='EX2'></div>
+	<div id='EX3'></div>
+	<div id='EX4'></div>
+	<div id='EX5'></div>	
+
+	<form id="form1" method="post" action="http://fe.it-academy.by/TestForm.php">
+		<fieldset>
+			<legend style=''>Log in</legend>
+			<div>
+				<label for="nn">Enter nickname:</label><br>
+				<input id="nn" type='text' name='nickname' placeholder="Slava85">
+			</div>
+			<div>
+				<label for="pas">Enter password:</label><br>
+				<input id="pas" type='password' name='password' placeholder="*******">
+			</div>
+			<div class="buttoms">
+				<button id="pu" type="reset">RESET</button>
+				<button id="pu" type="submit">SUBMIT</button>
+			</div>
+		</fieldset>
+	</form>
+	<div class="enter">
+		<p><a href="index.html" title="Forgot password, PUSH!!!"><img src="images/push.png" alt="кнопка/push"></a></p>
+	</div>
+</div>
+<script src="files/startJS.js"></script>
+</body>
+</html>

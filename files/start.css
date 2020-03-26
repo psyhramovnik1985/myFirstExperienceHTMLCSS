@@ -1,0 +1,294 @@
+@-webkit-keyframes Anim {
+    from { background: url('../images/toads_anim.png') 0 0; left: 0;}
+    to { background: url('../images/toads_anim.png') -700px 0;  left: 30%;} 
+}
+
+@keyframes Anim {
+    from { background: url('../images/toads_anim.png') 0 0; left: 0;}
+    to { background: url('../images/toads_anim.png') -700px 0;  left: 30%;} 
+}
+
+@-webkit-keyframes MyAnim {
+    from { background: url('../images/2left_toads_anim.png') 0 0; right: 0;}
+    to { background: url('../images/2left_toads_anim.png') -700px 0;  right: 30%;} 
+}
+
+@keyframes MyAnim {
+    from { background: url('../images/2left_toads_anim.png') 0 0; right: 0;}
+    to { background: url('../images/2left_toads_anim.png') -700px 0;  right: 30%;} 
+}
+
+@-webkit-keyframes rocketAnim {
+    from { background: url('../images/rocket1.gif') 0 0; top: -50%;}
+    to { background: url('../images/rocket1.gif') 0 0; top: 50%;}
+}
+
+@keyframes rocketAnim {
+    from { background: url('../images/rocket1.gif') 0 0; top: -55%;}
+    to { background: url('../images/rocket1.gif') 0 0; top: 45%;} 
+}
+
+/*@-webkit-keyframes rocketAnim {
+    from { background: url('../images/rocket1.gif') 0 0; top: -50%;}
+    to { background: url('../images/rocket1.gif') 0 0; top: 50%;}
+}*/
+
+@keyframes nuclearAnim {
+    from { background: url('../images/nuclear1.gif') 0 0;}
+    to { background: url('../images/nuclear1.gif') 0 1120px;} 
+}
+
+#EX2 {
+	position: fixed;
+	top: 40%;
+    width: 100px;
+    height: 135px;
+    z-index: 333;
+    -webkit-animation: Anim 3s steps(7) infinite;
+            animation: Anim 3s steps(7) infinite;
+    
+}
+/*animation-fill-mode: forwards;*/
+#EX3 {
+	position: fixed;
+	top: 40%;
+	right: 0;
+    width: 100px;
+    height: 135px;
+    -webkit-animation: MyAnim 3s steps(7) infinite;
+            animation: MyAnim 3s steps(7) infinite;
+}
+
+#EX4 {
+	position: fixed;
+	top: 0;
+	right: calc(49% - 45px);
+    width: 90px;
+    height: 220px;
+    -webkit-animation: rocketAnim 4s steps(15);
+            animation: rocketAnim 4s steps(15);
+}
+
+#EX5 {
+	position: fixed;
+	top: 40%;
+	left: calc(50% - 60px);
+    width: 120px;
+    height: 160px;
+    -webkit-animation: nuclearAnim 7s steps(7);
+            animation: nuclearAnim 7s steps(7);
+}
+
+img#EX6 {
+	position: absolute;
+	left: 38%;
+	top: 40%;
+	z-index: 1000;
+	width: 25%;
+	height: auto;
+}
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 119px;
+    height: 119px;
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    background: url('../images/239.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
+
+#page-preloader .spinner2 {
+    width: 119px;
+    height: 119px;
+    position: absolute;
+    left: 45%;
+    top: 44%;
+    background: url('../images/239.gif') no-repeat 50% 050%;
+    margin: -16px 0 0 -16px;
+}
+
+#page-preloader .spinner3 {
+    width: 150px;
+    height: 119px;
+    position: absolute;
+    left: 45.5%;
+    top: 57%;
+    background: url('../images/276.gif') no-repeat 50% 050%;
+    margin: -16px 0 0 -16px;
+}
+
+form {
+	display: none;
+	position: absolute;
+	left: 37%;
+	top: 18%;
+	width: 27%;	
+}
+
+div > img {
+	width: 100%; 
+	height: 950px; 
+	z-index: -1;
+}
+
+fieldset {
+	border: double red 5px;
+}
+
+form input {
+	width: 97%;
+	margin: 0 4px;	
+}
+
+form label {
+	font-size: 20px;
+	margin: 0 5px;
+	color: rgba(229,124,4,1);
+}
+
+legend {
+	font-style: italic;
+	width: 20%;
+	margin-left: 5px;
+	padding-left: 5px;
+	color: lightgreen;
+	font-size: 25px;
+}
+
+div.buttoms {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+button {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: rgba(229,124,4,1);
+	background-color: rgba(229,124,4,0.3); 
+}
+
+/*стилизация подсказки внутри input и textarea*/
+	::-webkit-input-placeholder {
+		color: rgba(31,26,182,0.8); 
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: bold;
+		padding-left: 1%;
+		background-color: rgba(255,255,255,0.5);		
+	}
+	::-moz-placeholder {
+		color: rgba(242,16,218,0.8); 
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: bold;
+		padding-left: 1%;
+		background-color: rgba(255,255,255,0.5);
+	}/* Firefox 19+ */
+	:-moz-placeholder {
+		color: rgba(242,16,229,0.8);
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: bold;
+		padding-left: 1%;
+		background-color: rgba(255,255,255,0.5);
+	}/* Firefox 18- */
+	:-ms-input-placeholder {
+		color: rgba(242,16,218,0.8);
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: bold;
+		padding-left: 1%;
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	div.enter {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: calc(52% - 130px);
+	}
+	div.enter img {
+		width: 60%;
+	}
+
+@media only all and (max-width: 1400px) {
+	legend {
+		font-size: 20px;
+	}
+
+	div.enter {
+		left: calc(53% - 132px);
+	}
+}
+
+@media only all and (max-width: 1150px) {
+	legend {
+		font-size: 18px;
+		width: 35%;
+	}
+}
+
+@media only all and (max-width: 1000px) {
+	legend {
+		font-size: 17px;
+		width: 30%;
+	}
+
+	div.enter {
+		left: calc(52% - 87px);
+	}
+
+	div.enter img {
+		width: 40%;
+	}
+}
+
+@media only all and (max-width: 800px) {
+	div.enter img {
+		width: 30%;
+	}
+
+	div.enter {
+		left: calc(51% - 54px);
+	}
+
+	form label {
+		font-size: 14px;
+	}
+
+	legend {
+		font-size: 14px;
+		width: 36%;
+	}
+	form input {
+		width: 95%;	
+	}
+}
+
+@media only all and (max-width: 580px) {
+	form {
+		top: 12%;
+		left: 16%;
+		width: 70%;	
+	}
+	
+	div.enter {
+		top: 55%;
+		left: 42%;
+	}
+
+	legend {
+		font-size: 25px;
+		width: 25%;
+	}
+}

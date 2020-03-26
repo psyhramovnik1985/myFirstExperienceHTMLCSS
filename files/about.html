@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выпускной проект HTML, CSS</title>	
+	<meta http-equiv="cleartype" content="on"/>	<!--включения сглаживания шрифтов-->
+	<meta name="HandheldFriendly" content="True"/><!--откл авто изменения масштаба смортфонами-->
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="address=no"/>
+	<meta name="x-rim-auto-match" content="none" forua="true"><!-- три меты чтоб браузеры мобильные не пытались обнаружить телефоны и адреса-->
+	<!-- saved from url=(0014)about:internet -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!--чтоб IE включал режим совместимости с последней его версией-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style_about.css" type="text/css">
+	<link rel="icon" href="../images/icon-jetro.gif" type="image/gif">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="page-preloader"><span class="spinner2"></span><span class="spinner"></span><span class="spinner3"></span></div>
+<img class="public" style="width: 350px; position: fixed; top: 600px; left: calc(50% - 175px)" src="../images/public.gif" alt="Not for public use!!! Just for demonstration of skills">
+<header>
+	<img src="../images/jetro.png" alt="JETRO">
+	<ul>
+		<li><a href="../index.html">HOME</a></li>
+		<li><a href="about.html">ABOUT US</a></li>
+		<li><a href="blog.html">BLOG</a></li>
+		<li><a href="portfolio.html">PORTFOLIO</a></li>
+		<li><a href="contact.html">CONTACT US</a></li>
+	</ul>
+	<div class="dropdown">
+ 		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</a>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    		<a class="dropdown-item" href="../index.html">HOME</a>
+    		<a class="dropdown-item" href="about.html">ABOUT US</a>
+    		<a class="dropdown-item" href="blog.html">BLOG</a>
+    		<a class="dropdown-item" href="portfolio.html">PORTFOLIO</a>
+    		<a class="dropdown-item" href="contact.html">CONTACT US</a>
+    	</div>
+  	</div>
+  	<div class="dropdown">
+ 		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INFO</a>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> 	
+  			<h6><span>ABOUT JETRO &emsp;</span></h6>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum. </p>
+			<h6><span>CATEGORIES &emsp;</span></h6>
+			<p><a href="" title="">Video (3)</a></p>
+			<p><a href="" title="">Sports (5)</a></p>
+			<p><a href="" title="">Media (2)</a></p>
+			<p><a href="" title="">Entertainment (7)</a></p>
+			<p><a href="" title="">Life (4)</a></p>
+			<p><a href="" title="">Super Cool Stuff (8)</a></p>
+			<h6><span>PHOTO GALLERY &emsp;</span></h6>
+			<div class="gallery">
+				<img src="../images/PhotoG_1.gif" alt="фотогалерея" title="Тут должны были быть фото">
+				<img src="../images/PhotoG_2.gif" alt="фотогалерея" title="Тут должны были быть фото">
+				<img src="../images/PhotoG_3.gif" alt="фотогалерея" title="Тут должны были быть фото">
+				<img src="../images/PhotoG_4.gif" alt="фотогалерея" title="Тут должны были быть фото">			
+				<img src="../images/PhotoG_5.gif" alt="фотогалерея" title="Тут должны были быть фото">
+				<img src="../images/PhotoG_6.gif" alt="фотогалерея" title="Тут должны были быть фото">
+				<img src="../images/PhotoG_7.gif" alt="фотогалерея" title="Тут должны были быть фото">
+				<img src="../images/PhotoG_9.gif" alt="фотогалерея" title="Тут должны были быть фото">						
+			</div>			
+		</div>	
+  	</div>
+</header>
+<div class="content_title">
+	<p>ABOUT US</p>
+</div>
+<div class="content">
+	<div class="left_col">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Maecenas in magna mollis lectus lacinia mollis.</p>
+		<img src="../images/chel.jpg" alt="Фотка пацанчика" title="Фотка">
+		<p>Maecenas ipsum metus, semper hendrerit varius mattis, hasr congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elem entum enim rutrum. Nam mi erat, porta idso ultrices nec, pellentesq ue vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdumni justo ultricies. Sed luctus dui nec ni  sl tem pus faucibus sit amet et sem. Aenean augue sapien, sodales ac bibendum ut, pellentesque id eros. Duis tristique porta aliquam. Curabitur sagittis tincidunt erat, quis hendrerit nibh iaculis vitae. Pellentesque ultricies nisl quis odio posuere facilisis. In ut felis erat, ac laoreet orci. Sed lectus nulla, bibendum at vulputate sit amet, tincidunt volutpat lorem. Maecenas in magna mollis lectus lacinia mollis. Donec sit amet volutpat lorem. Pellentesque ultricies nisl quis odio posuere facilisis. In ut felis erat, ac laoreet orci.  Aenean augue sapien, sodales ac bibendum ut, pellentesque id eros.</p>
+
+		<p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies. Sed luctus dui nec nisl tempus faucibus sit amet et sem. Aenean augue sapien, sodales ac bibendum ut, pellentesque id eros.</p>
+
+		<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas. Sed lectus nulla, bibendum at vulputate sit amet, tincidunt volutpat lorem. Maecenas in magna mollis lectus lacinia mollis. Donec sit amet volutpat lorem. Duis tristique porta aliquam. Curabitur sagittis tincidunt erat, quis hendrerit nibh iaculis vitae.</p>
+
+		<p><span>D</span>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit           	         amet erat blandit vitae pulvinar lorem egestas. Sed lectus nulla, bibendum at vulputate sit amet, tincidunt volutpat lorem. Maecenas in magna mollis lectus lacinia mollis. Donec sit amet volutpat lorem. Duis tristique porta aliquam. Curabitur sagittis tincidunt erat, quis hendrerit nibh iaculis vitae. Pellentesque ultricies nisl quis odio posuere facilisis. In ut felis erat, ac laoreet orci.</p>
+
+		<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas. Sed lectus nulla, bibendum at vulputate sit amet, tincidunt volutpat lorem. Mae trenas in magna mollis lectus lacinia mollis. Donec sit amet volutpat lorem. Du tristique porta aliquam. Curabitur sagittis tincidunt erat, quis hendrerit nibh iaculis vitae. Pellentesque ultric nisl quis odio posuere facilisis. In ut felis erat, ac laoreet orci donec sed nulla at sit amet.</p>
+
+		<div class="content_last_p">
+			<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas. Sed lectus nulla, bibendum at vulputate sit amet, tincidunt volutpat lorem.</p>
+
+			<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas. Sed lectus nulla, bibendum at vulputate sit amet, tincidunt volutpat lorem.</p>
+		</div>
+		<div class="content_bottom_p">
+			<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas.</p>
+
+			<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas.</p>
+
+			<p>Quisque mollis, sem id laoreet pretium, lectus elit molestie urna, id tristique risus ante at est. Sed pretium metus sit amet erat blandit vitae pulvinar lorem egestas.</p>
+		</div>
+		<div class="alert alert-success" role="alert">Alert Text</div>
+		<div class="alert alert-danger" role="alert">Alert Text</div>
+		<div class="alert alert-warning" role="alert">Alert Text</div>
+		<div class="alert alert-primary" role="alert">Alert Text</div>		
+	</div>
+	<div class="right_col">
+		<h6><span>ABOUT JETRO &emsp;</span></h6>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum. </p>
+		<h6><span>CATEGORIES &emsp;</span></h6>
+		<p><a href="" title="">Video (3)</a></p>
+		<p><a href="" title="">Sports (5)</a></p>
+		<p><a href="" title="">Media (2)</a></p>
+		<p><a href="" title="">Entertainment (7)</a></p>
+		<p><a href="" title="">Life (4)</a></p>
+		<p><a href="" title="">Super Cool Stuff (8)</a></p>
+		<h6><span>PHOTO GALLERY &emsp;</span></h6>
+		<div class="gallery">
+			<img src="../images/PhotoG_1.gif" alt="фотогалерея" title="Тут должны были быть фото">
+			<img src="../images/PhotoG_2.gif" alt="фотогалерея" title="Тут должны были быть фото">
+			<img src="../images/PhotoG_3.gif" alt="фотогалерея" title="Тут должны были быть фото">
+			<img src="../images/PhotoG_4.gif" alt="фотогалерея" title="Тут должны были быть фото">			
+			<img src="../images/PhotoG_5.gif" alt="фотогалерея" title="Тут должны были быть фото">
+			<img src="../images/PhotoG_6.gif" alt="фотогалерея" title="Тут должны были быть фото">
+			<img src="../images/PhotoG_7.gif" alt="фотогалерея" title="Тут должны были быть фото">
+			<img src="../images/PhotoG_9.gif" alt="фотогалерея" title="Тут должны были быть фото">			
+		</div>
+	</div>	
+</div>
+<div class="footer_mobile">
+	<div class="btn-group dropup">
+  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Abaut Jetro
+  		</button>
+  		<div class="dropdown-menu">
+  			<p>Lorem ipsum dolor sit amet, malorum recteqoe reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus disputando.</p>
+
+			<p>Pro et erantdelicata, eu vim essent imperdiet accommdare, dictas deseruisse ius an. Solet everti definitionem id ius, sonet oporteat cu vim.</p>
+  		</div>
+	</div>
+	<div class="btn-group dropup">
+  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Twitter Widget
+  		</button>
+  		<div class="dropdown-menu">
+  			<p><span>@pixelmater</span> What an awesome design with great functionality :)</p>
+			<p><span>about 1 hour ago</span></p>
+			<p><span>@designdude</span> What an awesome design with great functionality :)</p>	
+			<p><span>about 2 hour ago</span></p>
+			<p>Follow <span>@bestpsdfreebies</span></p>
+  		</div>
+	</div>
+	<div class="btn-group dropup">
+  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Contact US
+  		</button>
+  		<div class="dropdown-menu">
+  			<p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri.</p>
+
+			<p>information!jetro.com<br>1.222.333.4444</p>
+			<p><img src="../images/icon-fb.png.gif" alt="иконка мессенджера">
+				<img src="../images/icon-twit.gif" alt="иконка мессенджера">
+				<img src="../images/icon-mail.gif" alt="иконка мессенджера">
+				<img src="../images/icon-wf.gif" alt="иконка мессенджера">
+				<img src="../images/icon-V.gif" alt="иконка мессенджера">
+			</p>
+  		</div>
+	</div>
+</div>
+<footer>
+<div>
+	<h2>Abaut Jetro</h2>
+
+	<p>Lorem ipsum dolor sit amet, malorum recteqoe reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus disputando.</p>
+
+	<p>Pro et erantdelicata, eu vim essent imperdiet accommdare, dictas deseruisse ius an. Solet everti definitionem id ius, sonet oporteat cu vim.</p>
+</div>
+<div>
+	<h2>Twitter Widget</h2>
+
+	<p><span>@pixelmater</span> What an awesome design with great functionality :)</p>
+
+	<p><span>about 1 hour ago</span></p>
+
+	<p><span>@designdude</span> What an awesome design with great functionality :)</p>
+	
+	<p><span>about 2 hour ago</span></p>
+
+	<p>Follow <span>@bestpsdfreebies</span></p>
+</div>
+<div>
+	<h2>Contact US</h2>
+
+	<p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri.</p>
+
+	<p>information!jetro.com<br>1.222.333.4444</p>
+	<p><img src="../images/icon-fb.png.gif" alt="иконка мессенджера">
+		<img src="../images/icon-twit.gif" alt="иконка мессенджера">
+		<img src="../images/icon-mail.gif" alt="иконка мессенджера">
+		<img src="../images/icon-wf.gif" alt="иконка мессенджера">
+		<img src="../images/icon-V.gif" alt="иконка мессенджера">
+	</p>
+</div>
+</footer>
+<script src="othersJS.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Выпускной проект HTML, CSS</title>
+	
+	<meta http-equiv="cleartype" content="on"/>	<!--включения сглаживания шрифтов-->
+	<meta name="HandheldFriendly" content="True"/><!--откл авто изменения масштаба смортфонами-->
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="address=no"/>
+	<meta name="x-rim-auto-match" content="none" forua="true"><!-- три меты чтоб браузеры мобильные не пытались обнаружить телефоны и адреса-->
+	<!-- saved from url=(0014)about:internet -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<!--чтоб IE включал режим совместимости с последней его версией-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="files/style.css" type="text/css">
+	<link rel="icon" href="images/icon-jetro.gif" type="image/gif">	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div id="page-preloader"><span class="spinner2"></span><span class="spinner"></span><span class="spinner3"></span></div>
+<img class="public" style="width: 350px; position: fixed; top: 600px; left: calc(50% - 175px)" src="images/public.gif" alt="Not for public use!!! Just for demonstration of skills">	
+<header>
+	<img src="images/jetro.png" alt="JETRO">
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="files/about.html">ABOUT US</a></li>
+		<li><a href="files/blog.html">BLOG</a></li>
+		<li><a href="files/portfolio.html">PORTFOLIO</a></li>
+		<li><a href="files/contact.html">CONTACT US</a></li>
+	</ul>
+	<div class="dropdown">
+ 		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU</a>
+  		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    		<a class="dropdown-item" href="index.html">HOME</a>
+    		<a class="dropdown-item" href="files/about.html">ABOUT US</a>
+    		<a class="dropdown-item" href="files/blog.html">BLOG</a>
+    		<a class="dropdown-item" href="files/portfolio.html">PORTFOLIO</a>
+    		<a class="dropdown-item" href="files/contact.html">CONTACT US</a>
+    	</div>
+  	</div>  	
+</header>
+<div id='EX1'></div>
+<img class="leftBG" src="images/topBGimg.jpg" alt="картинка-фон">
+<img class="rightBG" src="images/topBGimg.jpg" alt="картинка-фон">
+<div class="Main">	
+	<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+  		<div class="carousel-inner">
+    		<div class="carousel-item active" data-interval="1000000">
+     			<img src="images/big_pic.png" class="d-block w-100" alt="...">
+    		</div>
+    		<div class="carousel-item" data-interval="1000000">
+     			<img src="images/1.jpg" class="d-block w-100" alt="...">
+   			</div>
+    		<div class="carousel-item" data-interval="1000000" >
+      			<img src="images/2.jpg" class="d-block w-100" alt="...">
+    		</div>
+    		<div class="carousel-item" data-interval="1000000" >
+      			<img src="images/3.jpg" class="d-block w-100" alt="...">
+    		</div>
+    		<div class="carousel-item" data-interval="1000000" >
+      			<img src="images/4.jpg" class="d-block w-100" alt="...">
+    		</div>
+    		<div class="carousel-item" data-interval="1000000" >
+      			<img src="images/5.jpg" class="d-block w-100" alt="...">
+    		</div>
+  		</div>
+  		<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Previous</span>
+  		</a>
+  		<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Next</span>
+  		</a>
+	</div>	
+	<div class="little_picture">
+		<img src="images/check1.png" alt="picture(">
+		<img src="images/check2.png" alt="picture(">
+		<img src="images/offer1.png" alt="picture(">
+		<img src="images/offer2.png" alt="picture(">
+		<img src="images/follow1.png" alt="picture(">
+		<img src="images/follow2.png" alt="picture(">
+	</div>
+	<div class="cler_b"></div>	
+	<div class="content">
+		<div class="content_top">					
+			<div class="content_top_left">
+				<img src="images/check.gif" alt="упс">			
+				<h2>Check  out  my  latest<br> portfolio  items</h2>
+				<p>Maecenas ipsum metus, semper hendrerit varius mattis, conque sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+				<div id="example-4">
+  					<button @click="show = !show">
+    					MORE
+  					</button>
+  					<transition
+    					v-on:before-enter="beforeEnter"
+    					v-on:enter="enter"
+    					v-on:leave="leave"
+    					v-bind:css="false"  >
+    					<p v-if="show">Maecenas ipsum metus, semper hendrerit varius mattis, conque sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies. </p>
+  					</transition>
+				</div>				
+			</div>					
+			<div class="content_top_middle">
+				<img src="images/offer.gif" alt="упс">	
+				<h2>Offer  Top  Notch  Quality<br> Work  &  Services</h2>
+				<p>Maecenas ipsum metus, semper hendrerit varius mattis, conque sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+				<div id="example-2">
+  					<button @click="show = !show">MORE</button>
+  					<transition name="bounce">
+    					<p v-if="show">Maecenas ipsum metus, semper hendrerit varius mattis, conque sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+  					</transition>
+				</div>
+			</div>			
+			<div class="content_top_right">
+				<img src="images/follow.gif" alt="упс">	
+				<h2>Follow  Me  on  Twitter,<br> Facebook  &  Pinterest</h2>
+				<p>Maecenas ipsum metus, semper hendrerit varius mattis, conque sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+				<input type=radio class='SReadMoreRadio' name=POEM id=POEM5 value=1>
+    			<label for=POEM5>MORE</label>
+				<p>Maecenas ipsum metus, semper hendrerit varius mattis, conque sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+				<input type=radio class='SReadMoreRadio' name=POEM id=POEM6 checked value=2>
+    			<label for=POEM6>HIDE</label>
+			</div>				
+		</div>
+		<div class="content_middle">
+			<p>RECENT WORKS</p>
+		</div>
+		<div class="content_bottom">
+			<div>
+				<img src="images/bottom1.png" alt="картинка"><p>CHARACTER DESIGN</p>
+				<p>JUNE 15,2012</p>
+			</div>
+			<div>
+				<img src="images/bottom2.png" alt="картинка"><p>BROCHURE DESIGN</p>
+				<p>JUNE 15,2012</p>
+			</div>
+			<div>
+				<img src="images/bottom3.png" alt="картинка"><p>SOCIAL MEDIA BUTTONS</p>
+				<p>JUNE 15,2012</p>
+			</div>
+			<div>
+				<img src="images/bottom4.png" alt="картинка"><p>10 AMAZING WEBSITES</p>
+				<p>JUNE 15,2012</p>
+			</div>							
+		</div>
+	</div>	
+</div>
+<div class="footer_mobile">
+	<div class="btn-group dropup">
+  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Abaut Jetro
+  		</button>
+  		<div class="dropdown-menu">
+  			<p>Lorem ipsum dolor sit amet, malorum recteqoe reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus disputando.</p>
+
+			<p>Pro et erantdelicata, eu vim essent imperdiet accommdare, dictas deseruisse ius an. Solet everti definitionem id ius, sonet oporteat cu vim.</p>
+  		</div>
+	</div>
+	<div class="btn-group dropup">
+  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Twitter Widget
+  		</button>
+  		<div class="dropdown-menu">
+  			<p><span>@pixelmater</span> What an awesome design with great functionality :)</p>
+			<p><span>about 1 hour ago</span></p>
+			<p><span>@designdude</span> What an awesome design with great functionality :)</p>	
+			<p><span>about 2 hour ago</span></p>
+			<p>Follow <span>@bestpsdfreebies</span></p>
+  		</div>
+	</div>
+	<div class="btn-group dropup">
+  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    	Contact US
+  		</button>
+  		<div class="dropdown-menu">
+  			<p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri.</p>
+
+			<p>information!jetro.com<br>1.222.333.4444</p>
+			<p><img src="images/icon-fb.png.gif" alt="иконка мессенджера">
+				<img src="images/icon-twit.gif" alt="иконка мессенджера">
+				<img src="images/icon-mail.gif" alt="иконка мессенджера">
+				<img src="images/icon-wf.gif" alt="иконка мессенджера">
+				<img src="images/icon-V.gif" alt="иконка мессенджера">
+			</p>
+  		</div>
+	</div>
+</div>
+<footer>
+<div>
+	<h2>Abaut Jetro</h2>
+
+	<p>Lorem ipsum dolor sit amet, malorum recteqoe reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus disputando.</p>
+
+	<p>Pro et erantdelicata, eu vim essent imperdiet accommdare, dictas deseruisse ius an. Solet everti definitionem id ius, sonet oporteat cu vim.</p>
+</div>
+<div>
+	<h2>Twitter Widget</h2>
+
+	<p><span>@pixelmater</span> What an awesome design with great functionality :)</p>
+
+	<p><span>about 1 hour ago</span></p>
+
+	<p><span>@designdude</span> What an awesome design with great functionality :)</p>
+	
+	<p><span>about 2 hour ago</span></p>
+
+	<p>Follow <span>@bestpsdfreebies</span></p>
+</div>
+<div>
+	<h2>Contact US</h2>
+
+	<p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri.</p>
+
+	<p>information!jetro.com<br>1.222.333.4444</p>
+	<p><img src="images/icon-fb.png.gif" alt="иконка мессенджера">
+		<img src="images/icon-twit.gif" alt="иконка мессенджера">
+		<img src="images/icon-mail.gif" alt="иконка мессенджера">
+		<img src="images/icon-wf.gif" alt="иконка мессенджера">
+		<img src="images/icon-V.gif" alt="иконка мессенджера">
+	</p>
+</div>
+</footer>
+<script src="files/indexJS.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
